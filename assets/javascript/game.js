@@ -58,7 +58,6 @@ var arrUserGuesses = new Array;
 
 //Start the game when the button is pressed -- FIX ! ! 
 function funStartGame() { 
-    document.getElementById("buttonStart").innerHTML = "Restart" // APPEAR NEW "RESTART" BUTTON INSTEAD, which dissapears when the game hasn't started
     machineGuess = funRandomLetter();
     guessesLeft = guessesMax; //Set the amount of tries to guessesMax, to deduct from there
     funGameLogic();
