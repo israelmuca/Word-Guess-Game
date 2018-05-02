@@ -92,6 +92,7 @@ function funGameLogic() {
 function funUserWins() {
     userWins+=1;
     document.getElementById("idWins").innerHTML = userWins;
+    $('#modalWin').modal('show');
     funRestart();
 }
 
@@ -115,5 +116,6 @@ function funTried(pUserGuess) {
 function funUserLoses() {
     userLoses+=1;
     document.getElementById("idLoses").innerHTML = userLoses;
+    $('#modalLose').modal('show');
     funRestart();
 }
