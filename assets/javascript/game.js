@@ -48,7 +48,7 @@ TBD later
 //Define all the variables
 var userWins = 0;
 var userLoses = 0;
-var guessesMax = 10; //BIG NO NO, shouldn't be hardcoded!!!!
+var guessesMax = 10; // shouldn't be hardcoded!!!!
 var guessesLeft = 0;
 var userGuess;
 var keysGuessed;

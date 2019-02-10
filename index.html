@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess Game</title>
+    <title>Guess the letter!</title>
     <!-- Bulma and Bootstrap CSS Framework CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-
-    <!--
+<!--
         TBD Later:
         - Make Wins and Loses bigger and centered
         - Make sure it's clear that the tries are part of the game
         - Modal window for Win or Lose animation
         - Buttons to restart or stop the game
     -->
+<body class="site">
+<section class="site-content">
+
+    <!-- HEADER -->
     <section class="hero is-info is-bold">
         <div class="hero-body container">
             <h1 class="title">
-                The Psychic Game
+                Guess the letter!
             </h1>
             <h2 class="subtitle">
-                In this game, you'll have to guess (or read my mind...) what letter I'm thinking of
+                In this game, you'll have to guess (or read my mind... <i class="fas fa-robot"></i> ) what letter I'm thinking of...
             </h2>
         </div>
     </section>
-<hr>
+
+    <!-- Separator to make sure the header is not sticking to the next elements -->
+    <section class="columns">
+        <div class="column"></div>
+    </section>
+
+    <!-- BODY -->
+    <hr>
     <div class="columns">
         <div class="column is-2"></div>
         <div class="column">
@@ -49,13 +61,40 @@
         </div>
         <div class="column is-2"></div>
     </div>
-<hr>
+    <hr>
     <div class="columns">
         <div class="column is-2"></div>
         <div class="column">
             <button class="button is-large is-success is-rounded is-focused has-text-weight-bold" id="buttonStart" onclick="funStartGame()">Start!</button>
         </div>
     </div>
+
+</section>
+
+<!-- Footer -->
+<section class="hero is-dark is-bold">
+    <div class="hero-body" style=" padding-top: 16px; padding-bottom: 16px;">
+        <div class="container columns clearfix">
+            <div class="column is-2"></div>
+            <div class="column">
+                <p><strong>Guess the letter!</strong> by Israel Muñoz.</p>
+            </div>
+            <div class="column is-5"></div>
+            <div class="column">
+                <a href="https://github.com/IsraelMuca/" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-github-alt"></i>
+                    </span>
+                </a>
+                <a href="https://twitter.com/IsraelMuca/" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Modal for Winning-->
 <div class="modal fade" id="modalWin" role="dialog">
@@ -100,7 +139,7 @@
   </div>
 
     <!-- JavaScript -->
-    <script src="assets/javascript/game.js"></script>
+    <script src="./assets/javascript/game.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
